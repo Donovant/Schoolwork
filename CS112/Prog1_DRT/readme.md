@@ -1,3 +1,3 @@
 # Assignment 1:
 - Create a program with three text boxes (One, Two, and Three) and fill these boxes with their respective names.
-- Create two buttons. The first button (Left) should left justify the text within the boxes created above.  The second button (Right) will left justify the test within these boxes. These buttons should be be able to be pushed consecutively with the expected formatting change observed. 
+- Create two buttons.  The first button (Left) should left justify the text within the boxes created above.  The second button (Right) will right justify the text within these boxes. These buttons should be be able to be pushed consecutively with the expected formatting change observed. 
