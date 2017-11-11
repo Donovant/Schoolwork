@@ -1,2 +1,4 @@
 # Assignment 4:
-** This program currently will not compile. I am in the process of trying to find the assignment details to recreate this project.
+- Write code to read the name of a baseball team, the number of games won, and
+the number of games lost, and display the name of the team and the percentage of games
+won.
