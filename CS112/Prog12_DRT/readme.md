@@ -1,0 +1,2 @@
+# Assignment 12:
+- Write program to compute tips for services rendered. The program should request the person’s occupation, the amount of the bill, and the percentage tip as input and pass this information to a Sub procedure to display the person and the tip. Title is gratuities, first line Person’s occupation, amount of the bill, percentage tip, Compute and display the tip.
