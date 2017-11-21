@@ -1,0 +1,2 @@
+# Assignment 3:
+- Create a program that will caluclate pay based on users input of hours and wage. Also, use regular pay for any hours <= 40, use double pay for hours over 40 and <= 50, and use triple pay for any hours over 50.  
