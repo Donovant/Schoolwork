@@ -1,0 +1,2 @@
+# Assignment 7:
+- User enters name and 5 numbers. Program then converts name to staggered uppercase and lowercase letters and gets the length of the name. It will also copy the name to a second array, and calculate the sum and average of the user defined numbers.
