@@ -1,0 +1,2 @@
+# Assignment 9:
+- Write a program that allows for user information (name, phone number and salary) to be entered.  The program should be able to sort the data, print all data or a conditional report and allow the user to apply a pay raise as a percentage of current wage to all users.
