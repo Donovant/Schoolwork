@@ -1,2 +1,2 @@
 # Assignment 10:
-- Write a program that allows for user information (name, phone number, position and salary) to be entered.  The program should be able to sort the data by name or salary, print all data or a conditional report and search for a specific name or position.
+- Write a program that allows for user information (name, phone number, position and salary) to be entered.  The program should be able to sort the data by name or salary, print all data or a conditional report and search for a specific name or position.  
