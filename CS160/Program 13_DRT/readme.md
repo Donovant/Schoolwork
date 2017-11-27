@@ -1,0 +1,2 @@
+# Assignment 13:
+- Write a program that allows the user to insert names into a linked list. They should be able to choose between inserting at the front of the list or at the back. Print this data out to show proper functionality.
