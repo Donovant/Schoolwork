@@ -4,7 +4,8 @@
 
 Example main program:
 
-```void main() 
+```
+void main() 
 { 
     gastank tank1; 
     gastank tank2(5);
@@ -34,7 +35,8 @@ Example main program:
 
     cout << "Gallons filled tank 1 -> " << tank1.fill() << endl; 
     cout << "Gallons filled tank 2 -> " << tank2.fill() << endl; 
-}```
+}
+```
  
 
 Example Output:  
