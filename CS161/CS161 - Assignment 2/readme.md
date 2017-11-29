@@ -4,11 +4,11 @@
 five fruits have the chance of coming up (apple, orange, cherry, banana and peach).  Each will have a different 
 probability of coming up.  When using the default constructor the probabilities are as follows.
 
-1.      apple -         30% 
-2.      orange -        25% 
-3.      cherry -        20% 
-4.      banana -        15% 
-5.      peach -         10%
+1. apple - 30% 
+2. orange - 25% 
+3. cherry - 20% 
+4. banana - 15% 
+5. peach - 10%
 
 When using the other constructor the user gets to select the percent for each fruit.  (Example Cspinner s2(50,20,10,10,10);)
 
