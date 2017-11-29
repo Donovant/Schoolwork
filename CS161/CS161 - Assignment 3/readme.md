@@ -42,15 +42,15 @@ void main()
 }
 ```
 
-Example output of the above program.
-
-orange apple apple 
-peach banana apple 
-banana apple apple 
-orange orange apple 
-banana cherry apple 
-orange orange orange  (All Oranges) 
-orange apple apple 
-peach apple apple 
-orange apple peach 
-apple cherry apple
+Example output of the above program.  
+  
+orange apple apple  
+peach banana apple  
+banana apple apple  
+orange orange apple  
+banana cherry apple  
+orange orange orange  (All Oranges)  
+orange apple apple  
+peach apple apple  
+orange apple peach  
+apple cherry apple  
