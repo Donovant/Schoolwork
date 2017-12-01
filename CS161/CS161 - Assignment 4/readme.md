@@ -1,44 +1,34 @@
 # Assignment 4:
 
-- Write the program that is going to simulate a slot machine. 
-The slot machine should have the following menu. 
+- Write the program that is going to simulate a slot machine. The slot machine should have the following menu.  
   
- 
-
-QUARTER SLOT MACHINE
-
+QUARTER SLOT MACHINE  
+  
  Please select one of the following options:  
-
- Q: Quarter 
- O: One dollar 
- F: Five dollars 
- T: Ten Dollars 
- 1: Play one quarter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credits -       0 
- 2: Play two quarters&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last payoff -   0 
- 3: Play three quarters 
- 4: Cash out 
- 5: Exit Program 
+  
+ Q: Quarter  
+ O: One dollar  
+ F: Five dollars  
+ T: Ten Dollars  
+ 1: Play one quarter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Credits -       0  
+ 2: Play two quarters&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last payoff -   0  
+ 3: Play three quarters  
+ 4: Cash out  
+ 5: Exit Program  
    
- Last spin -> Apple Apple Orange   
-  
-  
- 
+ Last spin -> Apple Apple Orange  
 
-If the user selects option (Q, O, F, or T) these options only 
-change the number of credits. (Q - 1, O - 4 , F - 20, T - 40) 
- 
-
-If the user selects option (1, 2, or 3) these options play the 
-slot machine.  If there is enough money to play.  The pay outs 
-are as follows. 
+If the user selects option (Q, O, F, or T) these options only change the number of credits. (Q - 1, O - 4 , F - 20, T - 40)  
   
+If the user selects option (1, 2, or 3) these options play the slot machine.  If there is enough money to play.  The pay outs are as follows:  
+    
 | Spin                 | Play 1 | Play 2 | Play 3 |
 | -------------------- | ------ | ------ | ------ |
 | Apple  Apple  Apple  |    4   |    8   |   16   |
 | Orange Orange Orange |   10   |   20   |   30   |
 | Banana Banana Banana |   50   |   75   |  100   |
 | Peach  Peach  Peach  |  250   |  500   |  750   |
-
+  
 1 Cherry any where money back  
 2 Cherries any where money back * 2   
 3 Cherries   money back * 20  
