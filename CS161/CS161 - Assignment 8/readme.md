@@ -10,14 +10,14 @@ Stack()          //  Default constructor.  Creates a stack that holds five items
 Stack(int size)  // Constructor.  Creates a stack that holds size items.
 
 Push(t item)  // This procedure should put the new item on the top of the stack.
-                      //  This procedure should throw an exception if the stack is full.
+              //  This procedure should throw an exception if the stack is full.
 
 t Pop()          // This procedure should return the top item of the stack.
-                     //  This procedure should throw an exception if the stack is empty.
+                 //  This procedure should throw an exception if the stack is empty.
 
 t RemoveItemFromBottom();  // This procedure removes the item from the bottom.
-                                                  // The item is returned and the stack is shifted down.
-                                                  //  This procedure should throw an exception if the stack is empty.
+                           // The item is returned and the stack is shifted down.
+                           //  This procedure should throw an exception if the stack is empty.
 
 bool Empty();  // Returns (true) if the stack is empty.
 ```
@@ -39,4 +39,3 @@ C)    Throw away bottom item. // The bottom item is thrown away and the new valu
 After the user selects (A, B, or C) the program should go back to the main menu.  
   
 When the user quits remove and display the remaining items in the stack.  
-  
