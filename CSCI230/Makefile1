@@ -1,0 +1,4 @@
+all:
+	gcc -c -fpic -O3 hw11-A-DonovanTorgerson.c hw11-B-DonovanTorgerson.c hw11-C-DonovanTorgerson.c
+	gcc -shared hw11-A-DonovanTorgerson.o hw11-B-DonovanTorgerson.o hw11-C-DonovanTorgerson.o -o hw11-lib-DonovanTorgerson.so
+	gcc -O3 hw11-DonovanTorgerson.c ./hw11-lib-DonovanTorgerson.so
