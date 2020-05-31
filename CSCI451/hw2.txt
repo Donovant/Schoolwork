@@ -1,0 +1,34 @@
+HW-2	CS451	10 points	Due: Sept. 13, 2013
+
+Write a program emulating a scheduler. Your program 
+must Fork() & Exe() [1] several programs, one at a 
+time, in order, and it must kill/suspend the previous 
+running program before starting the next (ie only 1 
+program can be running at a time). It helps to have 
+"X" programs so you can watch what happens [2]. Thus, 
+the programs required are xclock, xeyes, and  xlogo. 
+The program must run until stopped (cntrl C) by the user.
+
+[1] See UNIX System Calls link on class webpage for 
+samples.
+
+[2] Make sure you include 1 second delay loops. It 
+gives the processes enough time to load/start and enough 
+time for you to make sure things work correctly.
+
+NOTES:  
+
+1. You will need to know where these "X" programs are.
+One command useful for this is "find".
+
+
+REQUIREMENTS:
+-------------
+1. Your program must run in Streibel 109/115.
+
+2. Your full name must appear as a comment at the beginning of your 
+   program.
+
+3. Your source code must be named hw2-yourname.c or hw2-yourname.cpp
+
+3. Email your source (subject hw2-yourname) to <<Redacted>>
