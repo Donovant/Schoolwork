@@ -1,0 +1,63 @@
+HW-3	CS451	20 points	Due: Friday September 27
+
+Write a C/C++ program that uses the PTHREAD library to create 2 threads.
+The program must to the following:
+
+* MAIN will open a file (hw4.out) for writing, then call thread #1 and 
+  thread #2. MAIN will also close the file when thread #1 and thread 
+  #2 are finished.
+
+* THREAD #1 will open a file (hw4-1.in) for reading, will read 1 integer 
+  value from the file, and put that value in a global variable. Thread #1
+  will then wait for thread #2 before moving on to the next value (in 
+  hw4-1.in).
+
+* THREAD #2 will open a file (hw4-2.in) for reading, will read 1 integer
+  value from the file, will compare the value it read (from hw4-2.in) and the
+  value read by thread #1 (from hw4-1.in), and write the 2 integers (side by 
+  side) to hw4.out such that the smaller value is on the left (see example 
+  below). Thread #2 will then generate a signal telling both threads to move 
+  on to the next values in their respective files. Here is an example of what
+  hw4.out should look like:
+   3 5
+   6 8
+   1 5
+
+  When all of the data has been read, return control to the MAIN routine.
+
+
+* Note that both *.in files with have the same number of values.
+
+Requirements:
+-------------
+1. The *.in files will have the format of "integer" "linefeed". If you do not 
+abide by the input format and my program cannot test your program will my inputs
+it will be considered wrong. No exceptions! Thus, I suggest you use the command
+"fscanf(file, "%d\n", &value1)" to read your *.in files. For example:
+11
+12
+31
+43
+55
+
+2. Hw4.out must have the exact format of "integer" "1 space" "integer" "linefeed" 
+as the *.in files will be very long and I will have a program that runs through 
+your output files checking results. If you do not abide by the output format and
+my program cannot test your output it will be considered wrong. No exceptions! 
+Thus, I suggest you use the command "fprintf(file, "%d %d\n", value1, value2)" 
+to write your hw4.out file. For example:
+4 7
+4 98
+32 7
+24 0
+
+REQUIREMENTS:
+-------------
+1. Your program must run in Streibel 109/115.
+
+2. Your full name must appear as a comment at the beginning of your 
+   program.
+
+3. Your source code must be named hw3-yourname.c or hw3-yourname.cpp
+
+3. Email your source (subject hw3-yourname) to <<Redacted>>
