@@ -1,0 +1,84 @@
+HW-5	CS451	40 points	Due: Friday, October 18
+
+It's that spooky time of year when the dead walk the Earth, 
+things go bump in the night, and the Centers for Disease 
+Control (CDC) recognizes the need for zombie preparedness 
+(http://www.cdc.gov/phpr/zombies.htm). See also 
+http://www.cdc.gov/phpr/_media/cymkPrint/11_225700_A_Zombie_Final.pdf 
+
+This year it is even more spooky as the government shutdown 
+has closed the CDC, so no anti-zombie shots this year. Expect
+zombies to be running amok at a town near you!
+
+To add insult to injury, the federal goverment risks going 
+into default on Oct. 17 if Congress cannot agree to an increase 
+of the U.S. debt ceiling.
+
+To honor those corrupt morons in Congress, we will call this
+assignment the 5 little corrupt Senators (Rob Andrews (D-NJ),
+Michele Bachmann (R-MN), Tim Bishop (D-NY), Paul Broun (R-GA), 
+and Vern Buchanan (R-FL)). see http://www.crewsmostcorrupt.org/mostcorrupt
+We will honor Dianne Feinstein (D-CA) (another corrupt moron) 
+by naming her the mommie thread 
+(http://www.sodahead.com/united-states/dianne-feinstein-the-
+most-corrupt-person-in-congress-routes-even-more-money-to-
+husbands-firm/question-3651127/)
+
+Since Congress cannot balance their budget, we will show them
+how by writing a program that performs many parallel bank account
+updates WITHOUT a lost update!
+
+Write a C/C++ program that uses the PTHREAD library to create 5 
+threads and mutexes to synchronize them. The program must to the 
+following:
+
+* Dianne may initialize the mutexes, then call the threads Rob, 
+  Michele, Tim, Paul and Vern. You may want to detach the threads 
+  (I wish we could in reality) once they are created. 
+
+* Each thread will open its own command file (Rob.in, Michele.in, 
+  etc) for reading. The file format will be:
+
+   R
+   +/-N
+   +/-N	Note that there may be many +/-N lines
+   W
+
+   R indicates the start of a critical section - where you will acquire
+     the account balance from global storage.
+
+   +/-N indicates a deposit (+N) or withdraw (-N) from the account.
+
+   W indicates the end of the critical section - where you will write 
+     the accout balance to global storage. At this point each thread must
+     also display the text:
+
+   Account balance after thread *thread_name_here* is $xxx
+
+NOTES:
+------
+Start with a budget of 0 (zero).
+
+Each input file may be of different length and you may simply allow 
+the thread to die at that point. Hence you may not want to have Dianne 
+employ a pthread_join.
+
+The result of the single account should NOT contain any lost update. 
+That is, the results should be the same as if a single thread processed
+all 5 input files on the single account (hint, for testing). However, you 
+CANNOT force the threads into any serial execution. Once spawned they 
+must be free from external influences.
+
+I suggest you include a sleep() function in each thread to make sure 
+each thread runs long enough to get the random update behavior required.
+
+REQUIREMENTS:
+-------------
+1. Your program must run in Streibel 109/115.
+
+2. Your full name must appear as a comment at the beginning of your 
+   program.
+
+3. Your source code must be named hw5-yourname.c or hw5-yourname.cpp
+
+3. Email your source (subject hw5-yourname) to <<Redacted>>
