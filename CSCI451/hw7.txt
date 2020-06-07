@@ -1,0 +1,108 @@
+HW-7	CS451	10 points	Due: Friday, Nov. 8
+
+For the cessation of hostilities on the Western Front 
+of World War I, which took effect at eleven o'clock 
+in the morning and the "eleventh hour of the eleventh 
+day of the eleventh month" of 1918, we commemorate 
+those members of the armed forces who were killed 
+during the war on November 11 (Armistice Day).
+
+But we want to commemorate Montana's (where men are 
+men, women are scarce, and ...) admission as the 
+41st state in 1889 on November 8. So we dedicate this
+assignment to that historic event...
+
+We want to determine the cost of three different page 
+fault swapping mechanisms:
+
+Part 1:
+-------
+Create 1000 files that each contain a the name of the file. 
+Name these files hw7-0.data, hw7-1.data, ... hw7-999.data.
+
+Part 2:
+-------
+Write a program that benchmarks: 
+A) Randomly loads ten (one at a time) of the 1000 files 
+   (i.e. pages). Your code must also call usleep(1) 
+   for each file read. This will be used to simulate 
+   the cost of accessing the file system.
+B) Once 10 pages have been loaded:
+   1] Randomly write one of those loaded pages out to the disk 
+      using the same filename, but with a different extension 
+      (.data.swap). No usleep allowed here;
+   2] Randomly read one of the 1000 files, calling usleep(1)
+      again;
+   3] Randomly read in one of the .swap files. No usleep 
+      allowed here;
+
+   *] Repeat this process until your program has read in 
+      500 of the 1000 pages.
+
+Your code must return the number of milliseconds required to run.
+
+This program attempts to benchmark the cost of loading our 
+initial pages from the filesystem, but then uses the swap partition 
+for page faults whenever possible.
+
+Part 3:
+-------
+Write a program that benchmarks: 
+A) Randomly loads ten (one at a time) of the 1000 files 
+   (i.e. pages). Your code must also call a usleep(1) 
+   for each file read. This will be used to simulate 
+   the cost of accessing the file system.
+B) Once 10 pages have been loaded:
+   1] Randomly write one of those loaded pages out to the disk 
+      using the same filename, but with a different extension 
+      (.data.swap), calling usleep(1) again;
+   2] Randomly read one of the 1000 files, calling usleep(1)
+      again;
+   3] Randomly read in one of the .swap files, calling usleep(1)
+      again;
+
+   *] Repeat this process until your program has read in 
+      500 of the 1000 pages.
+
+Your code must return the number of milliseconds required to run.
+
+This program attempts to benchmark the cost of loading all of our 
+pages from the filesystem. Basically as Windows does (no swap partition).
+
+Part 4:
+-------
+Write a program that benchmarks: 
+A) Makes a copy of 1000 files, such that copies are call
+   hw7-x.data.swap. No usleep allowed.
+B) Randomly loads ten (one at a time) of the 1000 "swap" files 
+   (i.e. pages). No usleep allowed here.
+C) Once 10 pages have been loaded:
+   1] Randomly write one of those loaded pages out to the disk 
+      using the same filename, but with a different extension 
+      (.data.swap). No usleep allowed here;
+   2] Randomly read one of the 1000 "swap" files, no usleep allowed
+      here;
+   3] Randomly read in one of the .swap files. No usleep 
+      allowed here;
+
+   *] Repeat this process until your program has read in 
+      500 of the 1000 pages.
+
+Your code must return the number of milliseconds required to run.
+
+This program attempts to benchmark the cost of copying all of our 
+pages to the swap partition on program start-up, but where all page 
+faults are done using the swap partition.
+
+
+REQUIREMENTS:
+-------------
+1. Your program must run in Streibel 109/115.
+
+2. Your full name must appear as a comment at the beginning 
+   of your program.
+
+3. Your source code must be named hw7-yourname.c or 
+   hw7-yourname.cpp
+
+3. Email your source (subject hw7-yourname) to <<Redacted>>
